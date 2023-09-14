@@ -34,6 +34,18 @@ class ViewController: UIViewController {
             }
         }
     }
+    @IBAction func DogAPI_Button(_ sender: Any) {
+        Task {
+            do {
+                let response = try await DogAPI_Helper.fetch()
+                displayAPIResponse(response: response, title: "Dog API Response")
+            } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
+                print("Please insert connect URL")
+            } catch {
+                print(error)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

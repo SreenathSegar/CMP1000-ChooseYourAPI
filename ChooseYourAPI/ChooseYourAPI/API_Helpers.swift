@@ -47,3 +47,22 @@ class ReqresAPI_Helper{
         }
     }
 }
+
+class DogAPI_Helper{
+    static private let baseURL_String = "https://api.thedogapi.com/v1/breeds/1"
+    
+    static public func fetch() async throws -> Any{
+        guard
+            let url = URL(string: baseURL_String)
+        else {throw API_Errors.CANNOT_CONVERT_STRING_TO_URL}
+        
+        do{
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let jsonObject = try JSONSerialization.jsonObject(with: data)
+            print(jsonObject)
+            return jsonObject
+        } catch {
+            throw error
+        }
+    }
+}
