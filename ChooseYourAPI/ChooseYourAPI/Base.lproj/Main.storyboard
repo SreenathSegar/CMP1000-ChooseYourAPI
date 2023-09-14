@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChooseYourAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuY-IT-qH6">
+                                <rect key="frame" x="96" y="64" width="238" height="100"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JSONPlaceholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9du-qE-5Qv">
+                                <rect key="frame" x="20" y="233" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ReqRes.in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="try-Co-IUh">
+                                <rect key="frame" x="84" y="315" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dummy Rest API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U29-pu-ISD">
+                                <rect key="frame" x="29" y="401" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBG-dx-ETz">
+                                <rect key="frame" x="210" y="226" width="181" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="JSONPlaceholder"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IK-on-EQ5">
+                                <rect key="frame" x="210" y="307" width="181" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ReqRes.in"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XO-4y-Nmy">
+                                <rect key="frame" x="210" y="394" width="181" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dummy Rest API"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9IK-on-EQ5" firstAttribute="top" secondItem="dBG-dx-ETz" secondAttribute="bottom" constant="46" id="14x-g5-70D"/>
+                            <constraint firstItem="dBG-dx-ETz" firstAttribute="centerY" secondItem="9du-qE-5Qv" secondAttribute="centerY" id="2Mx-up-5G0"/>
+                            <constraint firstItem="U29-pu-ISD" firstAttribute="top" secondItem="try-Co-IUh" secondAttribute="bottom" constant="65" id="C9t-6y-NJN"/>
+                            <constraint firstItem="dBG-dx-ETz" firstAttribute="leading" secondItem="9du-qE-5Qv" secondAttribute="trailing" constant="41" id="I3I-HH-bxe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CuY-IT-qH6" secondAttribute="trailing" constant="96" id="O40-rv-d85"/>
+                            <constraint firstItem="U29-pu-ISD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="OV6-J2-ITq"/>
+                            <constraint firstItem="9XO-4y-Nmy" firstAttribute="leading" secondItem="9IK-on-EQ5" secondAttribute="leading" id="Sxe-Se-nN7"/>
+                            <constraint firstItem="try-Co-IUh" firstAttribute="top" secondItem="9du-qE-5Qv" secondAttribute="bottom" constant="61" id="T0V-yK-WOe"/>
+                            <constraint firstItem="CuY-IT-qH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="Tkp-pR-Hhd"/>
+                            <constraint firstItem="CuY-IT-qH6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Uem-4I-iff"/>
+                            <constraint firstItem="9du-qE-5Qv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="az6-WF-MT3"/>
+                            <constraint firstItem="9XO-4y-Nmy" firstAttribute="centerY" secondItem="U29-pu-ISD" secondAttribute="centerY" id="b0D-SJ-oWE"/>
+                            <constraint firstItem="9IK-on-EQ5" firstAttribute="leading" secondItem="try-Co-IUh" secondAttribute="trailing" constant="41" id="cAd-LB-kMW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CuY-IT-qH6" secondAttribute="bottom" constant="734" id="dVh-0s-ijz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9du-qE-5Qv" secondAttribute="trailing" constant="261" id="fIy-69-kaU"/>
+                            <constraint firstItem="9IK-on-EQ5" firstAttribute="leading" secondItem="dBG-dx-ETz" secondAttribute="leading" id="gww-wY-yM9"/>
+                            <constraint firstItem="U29-pu-ISD" firstAttribute="trailing" secondItem="try-Co-IUh" secondAttribute="trailing" id="hcb-JJ-Byf"/>
+                            <constraint firstItem="9du-qE-5Qv" firstAttribute="top" secondItem="CuY-IT-qH6" secondAttribute="bottom" constant="69" id="jCZ-Ce-EvH"/>
+                            <constraint firstItem="9IK-on-EQ5" firstAttribute="trailing" secondItem="dBG-dx-ETz" secondAttribute="trailing" id="t24-dV-wIN"/>
+                            <constraint firstItem="9XO-4y-Nmy" firstAttribute="trailing" secondItem="9IK-on-EQ5" secondAttribute="trailing" id="u7z-o5-0sG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBG-dx-ETz" secondAttribute="trailing" constant="39" id="uxY-aD-MXb"/>
+                            <constraint firstItem="try-Co-IUh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="xaO-ew-rzC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.74418604651163" y="3.8626609442060089"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
