@@ -54,6 +54,9 @@
                                 <rect key="frame" x="210" y="307" width="181" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ReqRes.in"/>
+                                <connections>
+                                    <action selector="ReqResButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qu6-8o-CDy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XO-4y-Nmy">
                                 <rect key="frame" x="210" y="394" width="181" height="35"/>

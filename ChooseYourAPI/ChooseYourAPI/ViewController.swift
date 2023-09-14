@@ -22,6 +22,19 @@ class ViewController: UIViewController {
             }
         }
     }
+    @IBAction func ReqResButton(_ sender: UIButton) {
+        Task {
+            do {
+                let response = try await ReqresAPI_Helper.fetch()
+                displayAPIResponse(response: response, title: "Reqres API Response")
+            } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
+                print("Please insert connect URL")
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

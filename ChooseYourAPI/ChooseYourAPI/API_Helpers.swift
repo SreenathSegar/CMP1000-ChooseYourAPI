@@ -28,3 +28,22 @@ class JSONPlaceholderAPI_Helper{
         }
     }
 }
+
+class ReqresAPI_Helper{
+    static private let baseURL_String = "https://reqres.in/api/users/1"
+    
+    static public func fetch() async throws -> Any{
+        guard
+            let url = URL(string: baseURL_String)
+        else {throw API_Errors.CANNOT_CONVERT_STRING_TO_URL}
+        
+        do{
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let jsonObject = try JSONSerialization.jsonObject(with: data)
+            print(jsonObject)
+            return jsonObject
+        } catch {
+            throw error
+        }
+    }
+}
