@@ -34,11 +34,11 @@ class ViewController: UIViewController {
             }
         }
     }
-    @IBAction func DogAPI_Button(_ sender: Any) {
+    @IBAction func AdviceSlipButton(_ sender: UIButton) {
         Task {
             do {
-                let response = try await DogAPI_Helper.fetch()
-                displayAPIResponse(response: response, title: "Dog API Response")
+                let response = try await AdviceSlipAPI_Helper.fetch()
+                displayAPIResponse(response: response, title: "Advice Slip API Response")
             } catch API_Errors.CANNOT_CONVERT_STRING_TO_URL {
                 print("Please insert connect URL")
             } catch {

@@ -48,8 +48,8 @@ class ReqresAPI_Helper{
     }
 }
 
-class DogAPI_Helper{
-    static private let baseURL_String = "https://api.thedogapi.com/v1/breeds/1"
+class AdviceSlipAPI_Helper{
+    static private let baseURL_String = "https://api.adviceslip.com/advice"
     
     static public func fetch() async throws -> Any{
         guard
