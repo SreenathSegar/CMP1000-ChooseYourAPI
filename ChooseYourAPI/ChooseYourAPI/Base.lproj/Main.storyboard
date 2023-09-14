@@ -46,6 +46,9 @@
                                 <rect key="frame" x="210" y="226" width="181" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="JSONPlaceholder"/>
+                                <connections>
+                                    <action selector="JSONPlaceholderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Vj-Ty-C8G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IK-on-EQ5">
                                 <rect key="frame" x="210" y="307" width="181" height="35"/>
